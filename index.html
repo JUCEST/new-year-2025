@@ -10,16 +10,15 @@
         padding: 0;
         font-family: "Arial", sans-serif;
         overflow: hidden;
+        color: white;
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
-        position: relative;
       }
 
       video {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -32,7 +31,6 @@
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 1;
       }
 
       .content {
@@ -47,6 +45,7 @@
         color: gold;
         text-shadow: 0 0 20px gold;
         position: relative;
+        top: 0;
         animation: swing 2s ease-in-out infinite;
         display: inline-block;
         transform-origin: top center;
@@ -54,7 +53,7 @@
 
       p {
         font-size: 1.5rem;
-        margin: 0;
+        margin: 20px 0 0;
         opacity: 0;
         animation: slideIn 2s ease forwards;
       }
@@ -91,7 +90,10 @@
     <canvas id="fireworksCanvas"></canvas>
     <div class="content">
       <h1>Happy New Year 2025!</h1>
-      <p>Wishing you joy, prosperity, and endless celebrations!</p>
+      <p>
+        As The Calender Turns, May Your Dreams And Aspirations Take Flight.<br />Happy
+        New Year
+      </p>
     </div>
 
     <script>
